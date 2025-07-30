@@ -1,0 +1,24 @@
+
+$theme :  #0080ff;
+$whiteColor : #fff;
+
+@mixin box($bgcolor) {
+    background-color: $bgcolor;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.loginArea{
+    background-color:$theme ;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    .loginForm{
+        width: 70%;
+       @include box( $whiteColor );
+
+    }
+}
